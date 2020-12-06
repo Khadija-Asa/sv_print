@@ -38,6 +38,8 @@ nav {
 
 .logo img {
   height: 80px;
+  width: 200px;
+  margin-top: 20px;
 }
 
 .menu > img {
@@ -50,7 +52,7 @@ nav {
   position: absolute;
   right: 0;
   display: none;
-  background-color: #F1957C;
+  background-color: #03989E;
   opacity: 0.5;
   border-radius: 5px;
 }
@@ -106,8 +108,8 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #F1957C;
-    opacity: 1;
+    background-color: #03989E;
+    opacity: 0.81;
   }
   
   .firstLevel li {
@@ -120,7 +122,7 @@ nav {
   
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px)  {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   
   nav {
     height: 140px;
@@ -141,8 +143,8 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #F1957C;
-    opacity: 1;
+    background-color: #03989E;
+    opacity: 0.8;
   }
   
 }
@@ -168,8 +170,8 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #F1957C;
-    opacity: 1;
+    background-color: #03989E;
+    opacity: 0.8;
   }
   
 }
