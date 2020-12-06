@@ -1,0 +1,157 @@
+* {
+  font-family: 'Red rose';
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+h1 {
+  font-size: 22px;
+  margin-left: 30px;
+}
+
+.horizontal {
+  border: 1px solid #004AAD;
+  display: inline-block;
+  margin-left: 20px;
+  width: 170px;
+}
+
+.highlight {
+  color: #004AAD;
+}
+
+/*PART 1/2*/
+
+.part-1,
+.part-2,
+.part-3,
+.part-4 {
+  display: flex;
+  font-size: 14px;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+.image-1 img,
+.image-2 img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 20px;
+  margin-top: 15px;
+  height: 100px;
+  width: 100px;
+}
+
+.paragraph-2,
+.paragraph-3 {
+  margin-top: 20px;
+}
+
+/*PART 3*/
+
+.part-3 {
+  display: flex;
+}
+
+.image-3 img {
+  margin-top: 10px;
+  height: 160px;
+  width: 120px;
+}
+
+/*PART 4*/
+
+.image-4 img {
+  margin-right: 20px;
+  margin-top: 15px;
+  height: 100px;
+  width: 100px;
+}
+
+.horizontal-2 {
+  border: 1px solid #004AAD;
+  display: inline-block;
+  margin-left: 20px;
+  width: 120px;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  .part-1,
+  .part-2,
+  .part-3,
+  .part-4 {
+  font-size: 18px;
+  margin-left: 30px;
+  margin-right: 30px;
+  }
+  .image-1 img,
+  .image-2 img {
+  height: 130px;
+  width: 200px;
+  }
+  .paragraph-1,
+  .paragraph-2,
+  .paragraph-3,
+  .paragraph-4 {
+  margin-top: 33px;
+  }
+  .image-3 img {
+  margin-top: 10px;
+  height: 160px;
+  width: 120px;
+  }
+  .image-4 img {
+  height: 140px;
+  width: 140px;
+  }
+  .paragraph-4 {
+  margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 28px;
+  }
+  .horizontal {
+    width: 220px;
+  }
+  .part-1,
+  .part-2,
+  .part-3,
+  .part-4 {
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  }
+  .image-1 img,
+  .image-2 img {
+  height: 240px;
+  width: 300px;
+  margin-right: 50px;
+  }
+  .paragraph-1,
+  .paragraph-2,
+  .paragraph-3,
+  .paragraph-4 {
+  margin-top: 38px;
+  }
+  .image-3 img {
+  height: 240px;
+  width: 200px;
+  }
+  .image-4 img {
+  height: 220px;
+  width: 220px;
+  }
+  .paragraph-4 {
+  margin-top: 90px;
+  }
+}
