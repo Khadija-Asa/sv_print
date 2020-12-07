@@ -30,6 +30,8 @@ footer p {
   flex-direction: column;
   width: 50%;
   padding-right: 7%;
+  justify-content: right;
+  margin-left: 40%;
 }
 
 .footer_picture {
@@ -53,6 +55,15 @@ footer p {
 .footer_phone,
 .footer_address {
   width: 100%;
+}
+
+.copyright {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  color: #4C5877;
+  clear: both;
 }
 
 @media screen and (min-width:550px) {
@@ -104,6 +115,7 @@ footer p {
     flex-direction: row;
     justify-content: space-around;
     width: 80%;
+    margin-left: 15%;
   }
 
 }
