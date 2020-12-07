@@ -1,0 +1,159 @@
+* {
+  font-family: 'Red rose';
+  margin: 0;
+  padding: 0;
+}
+
+
+.title {
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+h1 {
+  font-size: 22px;
+  margin-left: 30px;
+}
+
+.horizontal {
+  border: 1px solid #004AAD;
+  display: inline-block;
+  margin-left: 20px;
+  width: 240px;
+}
+
+.highlight {
+  color: #004AAD;
+}
+
+.content {
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.part1,
+.part2,
+.part5,
+.part6 {
+  background-color: #03989E;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 50px;
+  padding: 30px;
+}
+
+.part3,
+.part4,
+.part7 {
+  background-color: rgba(45, 48, 71, 0.8);
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 50px;
+  padding: 30px;
+}
+
+.part7 {
+  margin-bottom: 70px;
+}
+
+.part1 img,
+.part2 img,
+.part3 img,
+.part4 img,
+.part5 img,
+.part6 img,
+.part7 img {
+  height: 114px;
+  width: 82px;
+  margin-right: 25px;
+}
+
+.part3 img {
+  margin-top: 30px;
+}
+
+/* .diagonal-line {
+  border: 1px solid #03989E;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 70px;
+  rotate: -10deg;
+  width: 300px;
+} */
+
+@media only screen and (min-width: 768px) {
+  h1 {
+  font-size: 24px;
+  }
+  .content {
+  font-size: 20px;
+  }
+  /* }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+  .content>* {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex: 1 1 160px;
+  }
+  .horizontal {
+  width: 250px;
+  }
+  .part1 img,
+  .part2 img,
+  .part3 img,
+  .part4 img,
+  .part5 img,
+  .part6 img,
+  .part7 img {
+  height: 240px;
+  width: 150px;
+  } */
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 28px;
+  }
+  .horizontal {
+    width: 300px;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .part1,
+  .part2,
+  .part5,
+  .part6,
+  .part3,
+  .part4,
+  .part7 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    margin-right: 70px;
+    margin-left: 110px;
+    height: 220px;
+    width: 350px;
+  }
+  .part7 {
+    margin-left: 410px;
+  }
+  .part3 {
+    height: 250px;
+    width: 350px;
+  }
+  .part1 img,
+  .part2 img,
+  .part3 img,
+  .part4 img,
+  .part5 img,
+  .part6 img,
+  .part7 img {
+    height: 200px;
+    width: 150px;
+  }
+}
