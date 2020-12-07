@@ -1,0 +1,129 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  left: 0px;
+  background-image: url('../images/papers_2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Red Rose', cursive;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.fa-phone-alt {
+  color: #ffffff;
+}
+
+.footer_container { 
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  background-color: #03989E;
+  opacity: 0.9;
+  margin: 8% 10%;
+  height: 80%;
+}
+
+.footer_text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 7%;
+  justify-content: right;
+  margin-left: 40%;
+}
+
+.footer_picture {
+  width: auto;
+  height: 50%;
+  z-index: 1;
+  margin: 20% 3%;
+  position: absolute;
+}
+
+.footer_networks {
+  margin-top: 5%;
+  width: 100%;
+
+}
+
+.footer_networks i {
+  margin-right: 6%;
+}
+
+.footer_phone,
+.footer_address {
+  width: 100%;
+}
+
+.copyright {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  color: #4C5877;
+}
+
+@media screen and (min-width:550px) {
+
+  footer {
+    height: 370px;
+  }
+
+  .footer_picture {
+    height: 60%;
+    margin: 13% 3%;
+  }
+
+  .footer_container {
+    margin: 5% 10%;
+  }
+
+  .footer_text {
+    width: 60%;
+    padding-right: 7%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  
+  .footer_picture {
+    height: 65%;
+    margin: 6% 3%;
+  }
+
+  .footer_container {
+    margin: 3% 10%;
+  }
+
+}
+
+@media screen and (min-width:992px) {
+
+  .footer_picture {
+    height: 65%;
+    margin: 4% 3%;
+  }
+
+  .footer_container {
+    margin: 2% 6%;
+  }
+
+  .footer_text {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 15%;
+  }
+
+}
