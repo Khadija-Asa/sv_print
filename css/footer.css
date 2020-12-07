@@ -14,6 +14,15 @@ footer p {
   color: #ffffff;
 }
 
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.fa-phone-alt {
+  color: #ffffff;
+}
+
 .footer_container { 
   display: flex;
   flex-direction: row;
