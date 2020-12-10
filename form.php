@@ -29,7 +29,7 @@
   <div class="frames">
     <div class="frame">
       <img src="images/arrow.png" alt="flèche" class="small_icons">
-      <p>SV Print<br>
+      <p class="frame_address">SV Print<br>
       80 AV Roland Moreno<br>
       9410 Anzin</p>
     </div>
@@ -63,7 +63,7 @@
       <label for="subject">SUJET</label>
 		  <input type="text" id="subject" name="subject" placeholder="" required>
     </div>
-    <div>
+    <div class="message_container">
       <div class="category">
         <label for="message">MESSAGE</label>
         <textarea id="message" id="message" name="message" placeholder="" required></textarea>
