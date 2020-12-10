@@ -6,7 +6,7 @@
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <link href="css/form.css" rel="stylesheet">
-  <title>Document</title>
+  <title>Contactez-nous</title>
 </head>
 <body>
   <header>
@@ -14,13 +14,13 @@
     require_once('header.html');
   ?>
   </header>
-  <div>
+  <div class="title">
     <h1>Contactez-nous</h1>
     <span class="horizontal"></span>
-    </div>
+  </div>
   </div>
   <div>
-    <p>Service client au top à l'écoute du lundi au vendredi 
+    <p class="contact_us">Service client au top à l'écoute du lundi au vendredi 
     <span class="highlight">de 9h à 12h00 / 13H45 - 17H45 </span>
     ou joignable par mail pour répondre à toutes vos questions, 
     une erreur dans votre commande ? ou non reçue : 
@@ -28,59 +28,59 @@
   </div>
   <div class="frames">
     <div class="frame">
-      <img src="images/arrow.png" alt="flèche">
+      <img src="images/arrow.png" alt="flèche" class="small_icons">
       <p>SV Print<br>
       80 AV Roland Moreno<br>
       9410 Anzin</p>
     </div>
     <div class="frame">
-    <img src="images/phone.png" alt="téléphone">
-      <p>0652804655</p>
+    <img src="images/phone.png" alt="téléphone" class="small_icons">
+      <p class="frame_text">0652804655</p>
     </div>
     <div class="frame">
-      <img src="images/at.png" alt="arobase">
-      <p>sandy@svprint.fr</p>
+      <img src="images/at.png" alt="arobase"class="small_icons">
+      <p class="frame_text">sandy@svprint.fr</p>
     </div>
   </div>
   <form action="" method="post">
     <div class="category">
-      <label for="name">NOM:</label>
-      <input type="text" id="surname" name="surname" placeholder="Nom" required>
+      <label for="name">NOM</label>
+      <input type="text" id="surname" name="surname" placeholder="" required>
     </div>
     <div class="category">
       <label for="name">PRENOM</label>
-      <input type="text" id="name" class="form-control" name="name" placeholder="Prénom" required>
+      <input type="text" id="name" class="form-control" name="name" placeholder="" required>
     </div>
     <div class="category">
       <label for="mail">ADRESSE EMAIL</label>
-      <input type="email" id="email" class="form-control email" name="email" placeholder="Email" required>
+      <input type="email" id="email" class="form-control email" name="email" placeholder="" required>
     </div>
     <div class="category">
       <label for="mail">TELEPHONE</label>
-      <input type="text" id="phone" name="phone" placeholder="Tél (Ex. 0123456789)" pattern="^0\d(?:\d{2}){4}$" title="format: 0123456789" required />
+      <input type="text" id="phone" name="phone" placeholder="" pattern="^0\d(?:\d{2}){4}$" title="format: 0123456789" required />
     </div>
     <div class="category">
       <label for="subject">SUJET</label>
-		  <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+		  <input type="text" id="subject" name="subject" placeholder="" required>
     </div>
     <div>
       <div class="category">
         <label for="message">MESSAGE</label>
-        <textarea id="message" id="message" name="message" placeholder="Message" required></textarea>
+        <textarea id="message" id="message" name="message" placeholder="" required></textarea>
       </div>	
-      <div>
-        <input type="checkbox" class="" id="">
-        <label for="authorize">J’autorise le site à conserver mes données personnelles</label>
+      <div class="category autorization">
+        <input type="checkbox" class="ckeckbox" id="">
+        <label for="authorize" class="autorization_text">J’autorise le site à conserver mes données personnelles</label>
       </div>
-      <div>
-        <button type="submit" name="send" value="send">Envoyer</button>
+      <div class="category">
+        <button type="submit" name="send" value="send">ENVOYER</button>
       </div>
     </div>
   </form>
-  <footer>
+  <!-- <footer>
     <?php 
       require_once('footer.html');
     ?>
-  </footer>
+  </footer> -->
 </body>
 </html>
