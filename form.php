@@ -77,10 +77,10 @@
       </div>
     </div>
   </form>
-  <!-- <footer>
+  <footer>
     <?php 
       require_once('footer.html');
     ?>
-  </footer> -->
+  </footer>
 </body>
 </html>
