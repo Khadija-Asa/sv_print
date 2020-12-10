@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <link href="css/form.css" rel="stylesheet">
   <title>Contactez-nous</title>
 </head>
 <body>
-  <header>
+  <!-- <header>
   <?php 
     require_once('header.html');
   ?>
-  </header>
+  </header> -->
   <div class="title">
     <h1>Contactez-nous</h1>
     <span class="horizontal"></span>
@@ -77,10 +79,10 @@
       </div>
     </div>
   </form>
-  <footer>
+  <!-- <footer>
     <?php 
       require_once('footer.html');
     ?>
-  </footer>
+  </footer> -->
 </body>
 </html>
