@@ -4,14 +4,19 @@
   padding: 0;
 }
 
-.title {
-  margin-bottom: 50px;
-  margin-top: 70px;
-}
-
 h1 {
   font-size: 22px;
   margin-left: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
 }
 
 .horizontal {
@@ -19,6 +24,11 @@ h1 {
   display: inline-block;
   margin-left: 20px;
   width: 200px;
+}
+
+.title {
+  margin-bottom: 50px;
+  margin-top: 70px;
 }
 
 .highlight {
@@ -36,3 +46,4 @@ h1 {
   height: 80px;
   background-color: #2D3047;
 }
+
