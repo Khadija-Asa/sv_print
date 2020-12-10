@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -13,6 +16,8 @@
   </header>
   <div>
     <h1>Contactez-nous</h1>
+    <span class="horizontal"></span>
+    </div>
   </div>
   <div>
     <p>Service client au top à l'écoute du lundi au vendredi 
@@ -21,19 +26,19 @@
     une erreur dans votre commande ? ou non reçue : 
     Notre équipe vous recontactera dans la journée <span class="highlight">pour vous trouver une solution !<span></p>
   </div>
-  <div>
-    <div>
-      <img src="arrow.png" alt="flèche">
+  <div class="frames">
+    <div class="frame">
+      <img src="images/arrow.png" alt="flèche">
       <p>SV Print<br>
       80 AV Roland Moreno<br>
       9410 Anzin</p>
     </div>
-    <div>
-    <img src="phone.png" alt="téléphone">
+    <div class="frame">
+    <img src="images/phone.png" alt="téléphone">
       <p>0652804655</p>
     </div>
-    <div>
-      <img src="at.png" alt="arobase">
+    <div class="frame">
+      <img src="images/at.png" alt="arobase">
       <p>sandy@svprint.fr</p>
     </div>
   </div>
