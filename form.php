@@ -40,53 +40,34 @@
   <form action="" method="post">
     <div>
       <label for="name">NOM:</label>
-      <input type="text" id="name" name="user_name">
+      <input type="text" id="surname" name="surname" placeholder="Nom" required>
     </div>
     <div>
       <label for="name">PRENOM</label>
-      <input type="text" id="name" name="user_name">
+      <input type="text" id="name" class="form-control" name="name" placeholder="Prénom" required>
     </div>
     <div>
       <label for="mail">ADRESSE EMAIL</label>
-      <input type="email" id="mail" name="user_mail">
+      <input type="email" id="email" class="form-control email" name="email" placeholder="Email" required>
     </div>
     <div>
       <label for="mail">TELEPHONE</label>
-      <input type="email" id="mail" name="user_mail">
+      <input type="text" id="phone" name="phone" placeholder="Tél (Ex. 0123456789)" pattern="^0\d(?:\d{2}){4}$" title="format: 0123456789" required />
     </div>
     <div>
-      <p>
-        <label for="topic">SUJET</label>
-        <select name="" id="">
-          <option value="">Informations</option>
-          <option value="">Achat</option>
-          <option value="">Panne</option>
-          <option value="">Recherche d'emploi/stage</option>
-        </select>
-      </p>
-    </div>
-    <div>
-      <p>
-        <label for="topic">CATEGORIE</label>
-        <select name="" id="">
-          <option value="">Imprimantes</option>
-          <option value="">Cartouches</option>
-          <option value="">Toner</option>
-          <option value="">Autre</option>
-        </select>
-      </p>
-    </div>
-    <div>
-      <label for="message">MESSAGE</label>
-      <textarea id="message" name="user_message"></textarea>
-    </div>
+		<input type="text" id="subject" name="subject" placeholder="Sujet" required>
+	</div>
+	<div>
+		<textarea id="message" id="message" name="message" placeholder="Message" required></textarea>
+	</div>	
+	
     <div>
       <input type="checkbox" class="" id="">
       <label for="authorize">J’autorise le site à conserver mes données personnelles</label>
     </div>
     <div>
-      <button class="" type="submit">Envoyer</button>
-    </div>
+		  <button type="submit" name="send" value="send">Envoyer</button>
+	  </div>
   </form>
   <footer>
     <?php 
