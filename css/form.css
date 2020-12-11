@@ -104,16 +104,13 @@ button  {
 }
 
 .autorization {
-  flex-direction: row;
+  margin: 1% 5% 1% 5%;
+  width: 85%;
 }
 
 .autorization_text {
   font-size: 12px;
-  margin-left: 10px;;
-}
-
-.checkbox {
-  border-style: none;
+  margin-left: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -178,9 +175,9 @@ button  {
     margin-left: 5%;
   }
 
-  .autorization {
+  /* .autorization {
     flex-direction: row;
-  }
+  } */
 
   .message_container {
     width: 100%;

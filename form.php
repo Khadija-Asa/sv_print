@@ -47,30 +47,34 @@
   <form action="" method="post">
     <div class="category">
       <label for="name">NOM</label>
-      <input type="text" id="surname" name="surname" placeholder="" required>
+      <input type="text" id="surname" name="surname" placeholder="Nom" required>
     </div>
     <div class="category">
       <label for="name">PRENOM</label>
-      <input type="text" id="name" class="form-control" name="name" placeholder="" required>
+      <input type="text" id="name" class="form-control" name="name" placeholder="Prénom" required>
     </div>
     <div class="category">
       <label for="mail">ADRESSE EMAIL</label>
-      <input type="email" id="email" class="form-control email" name="email" placeholder="" required>
+      <input type="email" id="email" class="form-control email" name="email" placeholder="Email" required>
     </div>
     <div class="category">
       <label for="mail">TELEPHONE</label>
-      <input type="text" id="phone" name="phone" placeholder="" pattern="^0\d(?:\d{2}){4}$" title="format: 0123456789" required />
+      <input type="text" id="phone" name="phone" placeholder="Téléphone" pattern="^0\d(?:\d{2}){4}$" title="format: 0123456789" required />
     </div>
     <div class="category">
       <label for="subject">SUJET</label>
-		  <input type="text" id="subject" name="subject" placeholder="" required>
+		  <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+    </div>
+    <div class="category">
+      <label for="device">CATEGORIE</label>
+		  <input type="text" id="device" placeholder="Imprimante, cartouche, toner" name="device" placeholder="" required>
     </div>
     <div class="message_container">
       <div class="category">
         <label for="message">MESSAGE</label>
-        <textarea id="message" id="message" name="message" placeholder="" required></textarea>
+        <textarea id="message" id="message" name="message" placeholder="Votre message..." required></textarea>
       </div>	
-      <div class="category autorization">
+      <div class="autorization">
         <input type="checkbox" class="ckeckbox" id="">
         <label for="authorize" class="autorization_text">J’autorise le site à conserver mes données personnelles</label>
       </div>
@@ -78,6 +82,27 @@
         <button type="submit" name="send" value="send">ENVOYER</button>
       </div>
     </div>
+    <?php
+      if(isset($_POST['message'] )){
+          $entete  = 'MIME-Version: 1.0' . "\r\n";
+          $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+          $entete .= 'From: ' . $_POST['email'] . "\r\n";
+              
+          $message = '<h1>Message envoyé depuis la page Contact de svprint.com</h1>
+          <p><b>Nom : </b>' . $_POST['name'] . '<br>
+          <p><b>Prenom : </b>' . $_POST['surname'] . '<br>
+          <b>Email : </b>' . $_POST['email'] . '<br>
+          <b>Téléphone : </b>' . $_POST['phone'] . '<br>
+          <b>Message : </b>' . $_POST['message'] . '</br>
+          <b>Authorization : </b>' . $_POST['ok'] . '</br>
+          <b>Sujet : </b>' . $_POST['subject'] . '</p>';
+
+          $retour = mail('nellyanda18@gmail.com', 'Envoi depuis page Contact', $message, $entete);
+          if($retour) {
+            echo '<p>Votre message a bien été envoyé.</p>';
+          }
+      }
+    ?>
   </form>
   <footer>
     <?php 
